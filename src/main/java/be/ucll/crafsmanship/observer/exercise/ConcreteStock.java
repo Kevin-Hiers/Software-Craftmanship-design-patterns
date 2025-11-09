@@ -16,17 +16,17 @@ public class ConcreteStock implements Stock {
 
     @Override
     public void addInvestor(Investor investor) {
-        // TODO: Implement this method
+        this.investors.add(investor);
     }
 
     @Override
     public void removeInvestor(Investor investor) {
-        // TODO: Implement this method
+        this.investors.remove(investor);
     }
 
     @Override
     public void notifyInvestors() {
-        // TODO: Implement this method
+        this.investors.forEach(investor -> investor.update(this.getStockSymbol(), this.getPrice()));
     }
 
     public void setPrice(double newPrice) {
