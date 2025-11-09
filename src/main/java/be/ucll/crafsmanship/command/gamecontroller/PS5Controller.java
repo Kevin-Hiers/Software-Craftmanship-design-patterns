@@ -1,37 +1,40 @@
 package be.ucll.crafsmanship.command.gamecontroller;
 
 public class PS5Controller {
-    Command command;
+    Command crossCommand;
+    Command triangleCommand;
+    Command squareCommand;
+    Command circleCommand;
 
     public void setCrossButton(Command crossButton) {
-        this.command = crossButton;
+        this.crossCommand = crossButton;
     }
 
     public void pressCross() {
-        command.execute();
+        crossCommand.execute();
     }
 
     public void setTriangleButton(Command triangleButton) {
-        this.command = triangleButton;
+        this.triangleCommand = triangleButton;
     }
 
     public void pressTriangle() {
-        command.execute();
+        triangleCommand.execute();
     }
 
     public void setSquareButton(Command squareButton) {
-        this.command = squareButton;
+        this.squareCommand = squareButton;
     }
 
     public void pressSquare() {
-        command.execute();
+        squareCommand.execute();
     }
 
     public void setCircleButton(Command circleButton) {
-        this.command = circleButton;
+        this.circleCommand = circleButton;
     }
 
     public void pressCircle() {
-        command.execute();
+        circleCommand.execute();
     }
 }
