@@ -9,6 +9,6 @@ public class SquareButtonCommand implements Command {
 
     @Override
     public void execute() {
-        receiver.actionCross();
+        receiver.actionSquare();
     }
 }
